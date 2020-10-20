@@ -38,9 +38,10 @@
 
           <div class="list">
 
-              <div class="filter"> filter
+              <div class="filter"> 
+                  <h4>filter</h4>
                   <div class="filter-box"> 
-                      Multi Range
+                      <h5>Multi Range</h5>
                       <div>
                           <input type="radio" id="scales" name="scales" checked>
                           <label for="scales">$10</label>
@@ -49,18 +50,63 @@
                           <input type="radio" id="scales" name="scales" checked>
                           <label for="scales">$10-$100</label>
                       </div>
-                      Slider
-
-                      Category
                       <div>
-                          <input type="checkbox" id="scales" name="scales" checked>
-                          <label for="scales">$10-$100</label>
+                          <input type="radio" id="scales" name="scales" checked>
+                          <label for="scales">$100-$500</label>
+                      </div>
+                      <div>
+                          <input type="radio" id="scales" name="scales" checked>
+                          <label for="scales">$500</label>
+                      </div>
+                      <div>
+                          <input type="radio" id="scales" name="scales" checked>
+                          <label for="scales">All</label>
                       </div>
 
+                      <hr>
+
+                      <h5>Slider</h5>
+
+                      <hr>
+
+                      <h5>Category</h5>
+                      <div>
+                          <input type="checkbox" id="scales" name="scales" checked>
+                          <label for="scales">Cell Phones 1920</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" id="scales" name="scales" checked>
+                          <label for="scales">Computer & Tablets 1820</label>
+                      </div>
+
+                      <hr>
+                      <h5>Brand</h5>
+                      <div>
+                          <input type="checkbox" id="scales" name="scales" checked>
+                          <label for="scales">Cell Phones 1920</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" id="scales" name="scales" checked>
+                          <label for="scales">Computer & Tablets 1820</label>
+                      </div>
+
+                      <h5>Ratings</h5>
+                      <div>
+                          <input type="checkbox" id="scales" name="scales" checked>
+                          <label for="scales">Cell Phones 1920</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" id="scales" name="scales" checked>
+                          <label for="scales">Computer & Tablets 1820</label>
+                      </div>
+                      <button type="button">
+                          Clear all filters
+                      </button>
                   </div>
               </div>
 
               <div class="list-item">
+                  <input placeholder="Search hear" class="search" type="text">
                   <div 
                       v-for="(item, index) in [1, 2, 3, 4, 5]"
                       class="card"
@@ -224,6 +270,22 @@ export default {
 }
 .list-item{
     margin-left: 30px;
+}
+
+.search {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+
+    width: 100%;
+    height: 62px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #999999;
 }
 
 .card {
